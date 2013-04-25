@@ -10,6 +10,9 @@ public class BTTMainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bttmain);
+        
+        // Comment inline: 25.04.2013 RS über Online
+        
     }
 
 
