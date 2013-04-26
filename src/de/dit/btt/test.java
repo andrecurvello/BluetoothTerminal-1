@@ -1,3 +1,0 @@
-Dies ist einen Testdatei! 
-Wenn du die siehst hat alles geklappt...
-Dennis
