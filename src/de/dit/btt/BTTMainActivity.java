@@ -12,7 +12,7 @@ public class BTTMainActivity extends Activity {
         setContentView(R.layout.activity_bttmain);
         
         // 27.04.2013 RS: Egit installiert und Projekt lokal geclont
-  jkjk j
+        // Branch TEST
     }
 
 
