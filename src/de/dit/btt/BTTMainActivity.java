@@ -11,8 +11,8 @@ public class BTTMainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bttmain);
         
-        // Comment inline: 25.04.2013 RS über Online
-        
+        // 27.04.2013 RS: Egit installiert und Projekt lokal geclont
+  jkjk j
     }
 
 
