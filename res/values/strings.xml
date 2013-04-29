@@ -4,5 +4,6 @@
     <string name="app_name">Bluetooth Terminal</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="str_send">send</string>
 
 </resources>

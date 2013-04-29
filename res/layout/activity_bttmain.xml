@@ -11,7 +11,7 @@
     tools:context=".BTTMainActivity" >
 
     <TextView
-        android:id="@+id/tv_terminal_out"
+        android:id="@+id/tv_terminal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:ems="10" >
+        android:ems="10"
+        android:hint="@string/hello_world" >
 
         <requestFocus />
     </EditText>
@@ -36,6 +37,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Button" />
+        android:text="@string/hello_world" />
 
 </RelativeLayout>
