@@ -10,9 +10,8 @@ public class BTTMainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bttmain);
+         
         
-        // 27.04.2013 RS: Egit installiert und Projekt lokal geclont
-        // Branch TEST
     }
 
 
