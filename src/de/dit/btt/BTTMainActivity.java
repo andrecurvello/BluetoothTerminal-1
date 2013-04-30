@@ -4,6 +4,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.app.Activity;
+import android.bluetooth.BluetoothDevice;
+import android.content.BroadcastReceiver;
+import android.content.IntentFilter;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -13,9 +16,11 @@ import android.widget.TextView;
 
 public class BTTMainActivity extends Activity {
 	
-	private TextView 	mTvTerminal;
-	private EditText 	mEtInput;
-	private Button 		mBtSend;
+	private TextView 			mTvTerminal;
+	private EditText 			mEtInput;
+	private Button 				mBtSend;
+	
+	private BroadcastReceiver 	mBluetoothReceiver					= null;
 	
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,19 +28,31 @@ public class BTTMainActivity extends Activity {
         setContentView(R.layout.activity_bttmain);
         
         initGUI();
+        registerBroadcastReceiver();
          
         
     }
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.bttmain, menu);
-        return true;
-    }
-    
-    private void initGUI(){
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    // Inflate the menu; this adds items to the action bar if it is present.
+	    getMenuInflater().inflate(R.menu.bttmain, menu);
+	    return true;
+	}
+
+
+	private void registerBroadcastReceiver() {
+		 
+        IntentFilter I_BLUETOOTH_CONNECTED 		= new IntentFilter(BluetoothDevice.ACTION_ACL_CONNECTED);
+         
+        registerReceiver(mBluetoothReceiver, I_BLUETOOTH_CONNECTED);
+        
+		
+	}
+
+
+	private void initGUI(){
 		
 		mTvTerminal = (TextView) findViewById(R.id.tv_terminal);
 		mEtInput 	= (EditText) findViewById(R.id.et_input);
