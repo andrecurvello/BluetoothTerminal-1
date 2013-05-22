@@ -23,6 +23,8 @@ public class BTTMainActivity extends Activity {
 	private EditText 			mEtInput;
 	private Button 				mBtSend;
 	
+	// GITHUB TEST
+	
 	private BroadcastReceiver 	mBluetoothReceiver					= null;
     private BluetoothAdapter 	mBluetoothAdapter					= null; 
     
