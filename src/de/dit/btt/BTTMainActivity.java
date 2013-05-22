@@ -23,6 +23,7 @@ public class BTTMainActivity extends Activity {
         setContentView(R.layout.activity_bttmain);
         
         initGUI();
+        //
          
         
     }
